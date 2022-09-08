@@ -1,0 +1,9 @@
+DNA	Name	Chain	Specie
+AATTAA	Gene1	+	Mars settelers
+TAGACCA	Gene2	+	Mars settelers
+AATTAA	Gene3	-	Mars settelers
+TAGACCA	Gene4	-	Mars settelers
+AATTAA	Gene5	+	Mars settelers
+TAGACCA	Gene6	+	Moon settelers
+AATTAA	Gene7	-	Mars settelers
+TAGACCA	Gene8	+	 settelers
