@@ -21,10 +21,10 @@
 ## Обновление локального репозитория из главного
 
 Настроить upstream<br/>
-`C:\projects\python-for-beginners>git remote add upstream https://gitlab.sirius-web.org/courses/python-for-beginners.git`
+`C:\projects\python-for-beginners-2022>git remote add upstream https://gitlab.sirius-web.org/courses/python-for-beginners.git`
 
 Для обновления<br/>
-`C:\projects\python-for-beginners>git pull upstream master`
+`C:\projects\python-for-beginners-2022>git pull upstream master`
 
 ## Полезные ссылки
 
