@@ -11,7 +11,7 @@ def IsPrime(a):
 a=int(argv[1])
 sum=0
 
-for b in range(1,a):
+for b in range(2,a):
     if IsPrime(b)==True:
         sum=sum+b
 print(sum)
