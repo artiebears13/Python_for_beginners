@@ -18,7 +18,7 @@ def choose_lines(lines, regexp):  # choose correct lines
 
 
 def regexp_translate(regexp):
-    return regexp.replace('%d', '[+-]?[0-9]+').replace('%s', '\w+').replace('%f', '[+-]?[0-9]+.[0-9]+')
+    return regexp.replace('%d','\s*[+-]?[0-9]+').replace('%s', '\s*\w+').replace('%f', '\s*[+-]?[0-9]+\.[0-9]+')
 
 
 def get_params(lines, names):
