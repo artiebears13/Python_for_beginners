@@ -12,7 +12,7 @@ def is_prime(a):
 a = int(argv[1])
 res = 0
 
-for b in range(2, a):
+for b in range(2, a+1):
     if is_prime(b):
         res = res + b
 print(sum)
