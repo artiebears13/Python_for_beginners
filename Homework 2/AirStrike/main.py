@@ -63,4 +63,4 @@ if __name__ == "__main__":
     print('best aim coordinates: [{},{}],  total damage: {}'.format(float(rocket_max.x),
                                                                     float(rocket_max.y),
                                                                     float(rocket_max.w)))
-    #os.system('python Plot_results.py {} {} {}'.format(float(rocket_max.x), float(rocket_max.y),r))
+    os.system('python Plot_results.py {} {} {}'.format(float(rocket_max.x), float(rocket_max.y),r))

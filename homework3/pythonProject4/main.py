@@ -2,8 +2,8 @@ import re
 import pandas as pd
 
 
-def get_names(a):
-    a1 = a.replace(' ', '').replace('=%s', '').replace('=%f', '').replace('=%d', '')
+def get_names(sample):
+    a1 = sample.replace(' ', '').replace('=%s', '').replace('=%f', '').replace('=%d', '')
     return a1.split(',')
 
 
@@ -38,10 +38,10 @@ sentences.append('line')
 sentences.append('line')
 sentences.append('x = 343, y = 2.2, z = 999AAA99Zh')
 
-a = 'x = %d, y = %f, z = %s'
-names = get_names(a)
+sample = 'x = %d, y = %f, z = %s'
+names = get_names(sample)
 
-regexp = regexp_translate(a)
+regexp = regexp_translate(sample)
 
 lines = choose_lines(sentences, regexp)
 
