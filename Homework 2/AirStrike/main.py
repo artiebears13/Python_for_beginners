@@ -1,5 +1,6 @@
 from sys import argv
 import os
+import time
 
 import Base
 
@@ -8,18 +9,18 @@ import Rocket
 if __name__ == "__main__":
 
     bases = []
-    with open('targets.txt', "r") as file:
+    with open('targets_list.txt', "r") as file:
         for line in file:
             x, y, w = map(int, line.split())
             bases.append(Base.Base(x, y, w))
 
-    r = int(argv[1])
-    #r=2
+    #r = int(argv[1])
+    r=2
     maxw = 0
     rocket_max = Rocket.Rocket(r, 0, 0, 0)
 
     # перебор пар точек
-
+    start_time = time.perf_counter()
     for i in range(len(bases)):
         for j in range(i, len(bases)):
             #print('bases: {},{} and {},{}'.format(bases[i].x, bases[i].y, bases[j].x, bases[j].y))
@@ -60,7 +61,11 @@ if __name__ == "__main__":
                 if rocket1.w > rocket_max.w:
                     rocket_max = rocket1
 
+    end_time = time.perf_counter()
+
     print('best aim coordinates: [{},{}],  total damage: {}'.format(float(rocket_max.x),
                                                                     float(rocket_max.y),
                                                                     float(rocket_max.w)))
+    total_time=end_time-start_time
+    print('calculating time{}'.format(total_time))
     os.system('python Plot_results.py {} {} {}'.format(float(rocket_max.x), float(rocket_max.y),r))
