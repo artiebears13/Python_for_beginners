@@ -132,6 +132,6 @@ ax = plt.axes(xlim=(-30, 30), ylim=(-30, 30))
 
 line, = ax.plot([], [], lw=2)
 anim = animation.FuncAnimation(fig, animate_xy,
-                               frames=len(sx1), interval=10, blit=True)
+                               frames=len(sx1), interval=10, blit=False)
 
 plt.show()

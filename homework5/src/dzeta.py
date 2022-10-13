@@ -8,13 +8,13 @@ def dzeta_f(n):
         print (i, zetazero(i))
         yield i, zetazero(i)
 
+def main():
+    s = random.randint(4, 30)
 
-s = random.randint(4, 30)
+    a=dzeta_f(s)
+    fig=plt.figure()
+    ax=plt.axes()
+    for i in a:
+        ax.plot(i[0],i[1].imag,'-^')
 
-a=dzeta_f(s)
-fig=plt.figure()
-ax=plt.axes()
-for i in a:
-    ax.plot(i[0],i[1].imag,'-^')
-
-plt.show()
+    plt.show()
