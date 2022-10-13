@@ -1,5 +1,31 @@
 from Lorenz import lorenz_attractor
 import matplotlib.pyplot as plt
+from matplotlib import animation
+import seaborn as sns
+from mpl_toolkits.mplot3d import Axes3D
+
+def init():
+    line.set_data([], [])
+    return line,
+
+
+# animation function of dataframes' list
+def animate_xy(i):
+    line.set_data(sx1[:i], sy1[:i])
+
+    # p = sns.lineplot(x=sx1, y=sy1,  color="r")
+
+    # plt.setp(p.lines, linewidth=1)
+    return line,
+
+def animate_xz(i):
+    line.set_data(sx1[:i], sz1[:i])
+
+    # p = sns.lineplot(x=sx1, y=sy1,  color="r")
+
+    # plt.setp(p.lines, linewidth=1)
+    return line,
+
 
 TimeMod = 30.
 t0 = 0.
@@ -36,8 +62,8 @@ for p1, p2 in zip(l1, l2):
     if Time >= TimeMod:
         break
 
-#plt.plot(sx1, sy1, sz1)
-#plt.plot(sx2, sy2, sz2)
+# plt.plot(sx1, sy1, sz1)
+# plt.plot(sx2, sy2, sz2)
 # plt.draw()
 # plt.show()
 '''
@@ -88,7 +114,6 @@ ax3.grid()
 ax3.set_xlabel('y')
 ax3.set_ylabel('z')
 
-
 ax4 = fig.add_subplot(2, 2, 4, projection='3d')
 ax4.plot(sy1, sz1, sz1)
 ax4.plot(sy2, sz2, sz2)
@@ -96,5 +121,17 @@ ax4.set_title('x,y,z')
 ax4.set_xlabel('x')
 ax4.set_ylabel('y')
 ax4.set_zlabel('z')
+
+# plt.show()
+print(len(sx1))
+
+fig = plt.figure()
+ax = plt.axes(xlim=(-30, 30), ylim=(-30, 30))
+
+
+
+line, = ax.plot([], [], lw=2)
+anim = animation.FuncAnimation(fig, animate_xy,
+                               frames=len(sx1), interval=10, blit=True)
 
 plt.show()
