@@ -30,15 +30,15 @@ def get_params(lines, names):
 
 
 sentences = []
-sentences.append('x = 33, y = -18.22, z = cdcd')
+sentences.append('x = 33, y = -18.22, z = cdcd, ppp = abc')
 sentences.append('one more line')
-sentences.append('x = 1, y = 1.16, z = x')
+sentences.append('x = 1, y = 1.16, z = x, ppp = shit')
 sentences.append('line')
 sentences.append('line')
 sentences.append('line')
-sentences.append('x = 343, y = 2.2, z = 999AAA99Zh')
+sentences.append('x = 343, y = 2.2, z = 999AAA99Zh, ppp = cda')
 
-sample = 'x = %d, y = %f, z = %s'
+sample = 'x = %d, y = %f, z = %s, ppp = %s'
 names = get_names(sample)
 
 regexp = regexp_translate(sample)
