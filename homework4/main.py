@@ -33,7 +33,7 @@ x0 = 0.
 y0 = 1.
 z0 = 1.05
 xyz0 = (x0, y0, z0)
-step = 0.1
+step = 0.01
 l1 = lorenz_attractor([1, 2, 3], step)
 l2 = lorenz_attractor([2, 3, 4], step)
 '''
@@ -126,12 +126,12 @@ ax4.set_zlabel('z')
 print(len(sx1))
 
 fig = plt.figure()
-ax = plt.axes(xlim=(-30, 30), ylim=(-30, 30))
+ax = plt.axes(xlim=(-30, 60), ylim=(-30, 60))
 
 
 
 line, = ax.plot([], [], lw=2)
-anim = animation.FuncAnimation(fig, animate_xy,
-                               frames=len(sx1), interval=10, blit=False)
+anim = animation.FuncAnimation(fig, animate_xz,
+                               frames=len(sx1), interval=0.001, blit=False)
 
 plt.show()
