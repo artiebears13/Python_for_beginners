@@ -1,39 +1,5 @@
-# Курс "Введение в программирование" (Питон для начинающих) 
+# My University HW's (language:python)
+## Tasks:
 
-[Расписание](https://gitlab.sirius-web.org/courses/python-for-beginners-2022/-/wikis/%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5)
-
-# Основные идеи
-Данный курс разработан сотрудниками лаборатори "Вычислительная биология" НТИ "Сириус", для обучения основам программирования.  
-Данный курс включает в себя:  
-- основы работы с git репозиторием;
-- основы работы с Jupyter notebook;
-- основы программирования на языке Python;
-- основы работы с базами данных (на примере системы хранения данных SQL);
-- основы программирования на языке bash и работе с командной строкой;
-- основы работы с Docker контейнерами;  
-
-**Чем больше сделаете за время курса, тем проще будет зачёт**  
-
-<img src="lections/supplementary%20files/abstract.png" alt="Alt text" title="Optional title">
-
-Данный курс представлен в виде git репозитория, а каждое занятие представлено в виде отдельного Jupyter ноутбука. Домашние и контрольные задания также представлены в виде Jypyter ноутуков. Каждый студент клонирует себе исходный репоизиторий и в нем выполняет задания. По завершению проекта студент может оставить себе свой репозиторий, в котором пройденные занятия могут служить ему конспектом и справочником по пройденным темам. В ходе обучения студент может в своем репозитории расширять и дополнять конспекты пройденных тем.
-
-## Обновление локального репозитория из главного
-
-Настроить upstream<br/>
-`C:\projects\python-for-beginners-2022>git remote add upstream https://gitlab.sirius-web.org/courses/python-for-beginners.git`
-
-Для обновления<br/>
-`C:\projects\python-for-beginners-2022>git pull upstream master`
-
-## Полезные ссылки
-
-- [Основы программирования в Python](http://math-info.hse.ru/2018-19/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_%D0%B2_Python#.D0.9F.D1.80.D0.B0.D0.B2.D0.B8.D0.BB.D0.B0_.D0.B8.D0.B3.D1.80.D1.8B)
-
-- [Программирование для всех - основы работы с Python](http://math-info.hse.ru/s20/5)
-
-- https://stackoverflow.com/questions/20303335/ipython-notebook-plantuml-extension
-- https://webdevkin.ru/posts/raznoe/git-fork
-
-- https://git-scm.com/book/ru/v2
-- https://tproger.ru/translations/beginner-git-cheatsheet/
+1.   <a href="https://github.com/artiebears13/Python_for_beginners/tree/main/homework3/pythonProject4">Parsing using regexpk</a>
+2.  <a href="https://github.com/artiebears13/Python_for_beginners/tree/main/homework4">Lorenz attractor modelling</a>
